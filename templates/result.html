@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link href="/static/css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-6 rounded shadow-lg text-center">
+      <h1 class="text-2xl font-bold mb-4">Processed Image</h1>
+      <div class="container flex mx-4">
+        <div>
+          <h2 class="text-lg font-semibold">Original</h2>
+          <img src="{{ original }}" class="my-4 max-w-full" />
+        </div>
+        <!-- download process png -->
+        <div>
+          <h2 class="text-lg font-semibold">Result</h2>
+          <img src="{{ processed }}" class="my-4 max-w-full" />
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="flex justify-evenly gap-4">
+          <a
+            href="{{ url_for('download_file', filename=processed.split('/')[-1]) }}"
+            class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+          >
+            Download Processed Image (PNG)
+          </a>
+          <a
+            href="/"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
