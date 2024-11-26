@@ -1,6 +1,6 @@
 # **Image Background Remover with Transparency**
 
-## Developed by BBC Team
+Developed by BBC Team
 
 ## **Deskripsi Proyek**
 
@@ -97,11 +97,14 @@ python -m venv env
 ### **3. Aktifkan Virtual Environment**
 
 - **Windows**:
+
   ```bash
   env\Scripts\activate
 
   ```
+
 - **Mac/Linux**:
+
   ```bash
   source env/bin/activate
 
@@ -145,11 +148,3 @@ Gambar dengan format `.jpg`, `.jpeg`, atau `.png`.
 Gambar hasil dengan objek foreground terpisah dari latar belakang, disimpan dalam format `.png` dengan transparansi.
 
 ---
-
-## **Lisensi**
-
-Proyek ini dilisensikan di bawah [MIT License](https://chatgpt.com/c/LICENSE).
-
----
-
-Dengan dokumentasi ini, proyek Anda dapat dengan mudah dipahami oleh pengguna dan developer lain di GitHub! Jangan lupa mengganti `username` dengan nama pengguna GitHub Anda sebelum diunggah. 😊
